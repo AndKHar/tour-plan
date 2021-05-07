@@ -12,8 +12,8 @@
       margin-bottom: 30px
     &__search
       margin-left: auto
-      
-    &-menu
+
+      &-menu
       padding-top: 22px
       padding-bottom: 22px
       &__link
@@ -29,7 +29,7 @@
   .navbar
     &__search, &-menu, &__user
       display: none
-    &-top
+
   .menu
     &-button
       display: flex
@@ -51,5 +51,13 @@
     width: 99px
 @media (max-width: 320px)
   .container
-    max-width: 576px
-    width: 92%
+    width: 280px
+  .navbar
+    &-top
+      height: 70px
+      margin: 0
+  .navbar-bottom
+    display: block
+    width: 320px
+    &-menu
+      width: 100%

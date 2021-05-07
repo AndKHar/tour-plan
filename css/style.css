@@ -495,12 +495,10 @@ template {
   }
   .navbar__search {
     margin-left: auto;
-  }
-  .navbar-menu {
     padding-top: 22px;
     padding-bottom: 22px;
   }
-  .navbar-menu__link {
+  .navbar__search__link {
     font-size: 12px;
     line-height: 15px;
   }
@@ -553,8 +551,18 @@ template {
 
 @media (max-width: 320px) {
   .container {
-    max-width: 576px;
-    width: 92%;
+    width: 280px;
+  }
+  .navbar-top {
+    height: 70px;
+    margin: 0;
+  }
+  .navbar-bottom {
+    display: block;
+    width: 320px;
+  }
+  .navbar-bottom-menu {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
