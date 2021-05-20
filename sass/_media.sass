@@ -47,8 +47,14 @@
     &-right
       flex-direction: row
     &-slider
-      width: 100%
-      height: 100%
+      &__image
+        width: 100%
+        height: 100%
+    &-slide
+      &__image
+        width: 100%
+        height: 100%
+        object-fit: cover
   .booking
     width: 340px
   .map
@@ -57,6 +63,11 @@
     &-slider
       &__item
         max-width: 580px
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 30px
+      line-height: 38px
   .activities
     &-wrapper
       flex-wrap: wrap
@@ -197,6 +208,13 @@
         padding: 0 30px 30px
         &:after, &:before
           display: none
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      text-align: center
+      text-transform: uppercase
       &__button
         top: 30px
         &--prev
