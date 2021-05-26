@@ -1,4 +1,4 @@
--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&displaydisplay=swap"
   rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -17,14 +18,17 @@
   <header class="navbar navbar--mobile_fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="#" class="logo" data-aos="fade-right" data-aos-delay="100">
           <img 
           src="img/horizontal-logo.svg" 
           alt="Logo: Best Tour Plan" 
           class="logo__image"/>
         </a>
 
-        <form action="#" class="search navbar__search navbar__search--mobile_hidden">
+        <form
+          data-aos="fade-right"
+          data-aos-delay="200"
+          action="#" class="search navbar__search navbar__search--mobile_hidden">
           <input 
           type="text"
           class="search__input" 
@@ -35,7 +39,7 @@
           </button>
         </form>
 
-        <a href="#" class="user navbar__user navbar__user--mobile_hidden">
+        <a href="#" class="user navbar__user navbar__user--mobile_hidden" data-aos="fade-right" data-aos-delay="300">
           <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="avatar user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -166,7 +170,7 @@
             <!-- /.swiper-container-->
           </div>
         <div class="hotel-right">
-        <div class="booking">
+        <div class="booking" data-aos="fade-left" data-aos-delay="500">
           <div class="booking__info">
             <div class="booking__price">
               <span class="booking__start">price start as</span>
@@ -217,7 +221,7 @@
   <!-- /.hotel -->
   <section class="newsletter">
     <div class="newsletter-wrapper">
-      <h2 class="newsletter-title newsletter__title">
+      <h2 class="newsletter-title newsletter__title" data-aos="zoom-in" data-aos-delay="500">
         subscribe to our
         <span class="newsletter-title__strong">News letter</span>
       </h2><form action="#" class="subscribe newsletter__subscribe">
@@ -233,7 +237,7 @@
     <section class="reviews">
       <div class="container">
         <h2 class="reviews__title">What people think about us</h2>
-        <div class="swiper-container reviews-slider">
+        <div class="swiper-container reviews-slider" data-aos="flip-right" data-aos-delay="300">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="reviews-slider__item">
@@ -301,25 +305,25 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-            <div class="card activities__card">
+            <div class="card activities__card" data-aos="fade-right" data-aos-delay="100">
               <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
               <h3 class="card__title">The curious corner of chamarel</h3>
               <button class="card__button">Book Now</button>
             </div>
             <!-- /.card -->
-            <div class="card activities__card">
+            <div class="card activities__card" data-aos="fade-right" data-aos-delay="300">
               <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
               <h3 class="card__title">Gymkhana club golf course</h3>
               <button class="card__button">Book Now</button>
             </div>
             <!-- /.card -->
-            <div class="card activities__card">
+            <div class="card activities__card" data-aos="fade-right" data-aos-delay="500">
               <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day"   class="card__image">
               <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
               <button class="card__button">Book Now</button>
             </div>
             <!-- /.card -->
-            <div class="card activities__card">
+            <div class="card activities__card" data-aos="fade-right" data-aos-delay="700">
               <img src="img/activity-4.jpg" alt="The blue marine discovery quest"   class="card__image">
               <h3 class="card__title">The blue marine discovery quest</h3>
               <button class="card__button">Book Now</button>
@@ -338,6 +342,8 @@
             src="img/vertical-logo.svg" 
             alt="Logo: Best Tour Plan" 
             class="logo footer__logo"
+            data-aos="flip-up"
+            data-aos-delay="400"
             >
             <div class="footer__list footer__categories">
               <h3 class="footer__title">ALL CATEGORIES</h3>
@@ -434,14 +440,14 @@
         <!-- /.footer-wrapper -->
         <div class="footer__bottom">
           <div class="footer__bottom_conditions">
-            <ul class="footer__bottom_conditions--content">
-              <li class="conditions--content">Disclaimer</li>
-              <li class="conditions--content">Conditions of use</li>
-              <li class="conditions--content">Cancellation policy</li>
+            <ul class="footer__bottom_conditions_content">
+              <li class="conditions_content">Disclaimer</li>
+              <li class="conditions_content">Conditions of use</li>
+              <li class="conditions_content">Cancellation policy</li>
             </ul>
-            <img class="footer__bottom-conditions--pays" src="img/pays-sys.png" alt="Pays sys">
+            <img class="footer__bottom-conditions_pays" src="img/pays-sys.png" alt="Pays sys">
           </div>
-          <div class="footer__bottom-pays"></div>
+          <div class="footer__bottom_pays"></div>
         </div>
         <!-- /.footer__bottom -->
       </div>
@@ -496,6 +502,7 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 
