@@ -45,7 +45,12 @@ img {
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
-  margin-bottom: 103px;
+  cursor: pointer;
+}
+
+.invalid {
+  color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -710,8 +715,9 @@ template {
   color: #fff;
   border-radius: 8px;
   width: 350px;
-  min-height: 210px;
+  height: 210px;
   padding: 28px;
+  margin-bottom: 25px;
 }
 
 .booking__info {
@@ -1303,6 +1309,10 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
@@ -1340,7 +1350,7 @@ template {
   width: 283px;
 }
 
-.footer__bottom_conditions--content {
+.footer__bottom_conditions_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1356,6 +1366,12 @@ template {
   list-style: none;
 }
 
+.footer__bottom_conditions_pays {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;
@@ -1366,6 +1382,8 @@ template {
   z-index: 100;
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 .modal__overlay--visible {
@@ -1378,7 +1396,7 @@ template {
   top: 50%;
   left: 50%;
   max-width: 478px;
-  height: 478px;
+  height: 500px;
   padding: 33px 88px;
   background-color: #0A223D;
   -webkit-transform: translate(-50%, -50%);
@@ -1388,6 +1406,8 @@ template {
   z-index: 101;
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 .modal__dialog--visible {
@@ -1415,13 +1435,17 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   minh: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.modal__button {
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1449,7 +1473,7 @@ template {
     width: 230px;
     height: 230px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1538,9 +1562,9 @@ template {
         grid-template-columns: repeat 6, 1fr;
     grid-row-gap: 40px;
   }
-  .footer__input {
-    -ms-flex-preferred-size: 49%;
-        flex-basis: 49%;
+  .footer__input-group {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -1764,7 +1788,7 @@ template {
     width: 49%;
     height: 255px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
