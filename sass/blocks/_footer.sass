@@ -92,18 +92,19 @@
     font-size: 12px
     line-height: 15px
   &__info
+    box-sizing: border-box
     font-style: normal
     font-weight: bold
     font-size: 12px
     line-height: 15px
     color: $footer-text-color
   &__bottom
-    &_conditions
+    &-conditions
       display: grid
       grid-template-columns: 2
       grid-template-rows: 1
       width: 283px
-      &_content
+      &-content
         display: flex
         justify-content: space-between
         padding-left: 0
@@ -113,7 +114,9 @@
         line-height: 15px
         color: #FFFFFF
         list-style: none
-      &_pays
+        cursor: pointer
+      &-pays
         order: -1
+        cursor: pointer
         
     
